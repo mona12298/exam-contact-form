@@ -1,0 +1,127 @@
+/* 全体コンテナ */
+.form {
+    width: 972px;
+    margin: 0 auto;
+}
+
+/* 各フォーム項目の設定 */
+.form-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 972px;
+}
+
+/* ラベルの設定 */
+.form-item-label {
+    font-size: 20px;
+    text-align: left;
+    width: 310px;
+}
+
+.form-item-label span {
+    color: #FF9494;
+}
+
+/* 入力部分全体の設定 */
+.form-item-content {
+    font-size: 18px;
+    flex: 1;
+}
+
+/* .form-item-content内のラベル */
+.form-item-content label {
+    font-size: 18px;
+    color: #8B7969;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* 隣接するラベル同士の間隔 */
+.form-item-content label:not(:first-child) {
+    margin-left: 40px;
+}
+
+/* 名前や電話番号グループの設定 */
+.form-item-content-name,
+.form-item-content-tel {
+    display: flex;
+    gap: 20px;
+}
+
+/* 単体の入力欄（メールアドレスや住所、テキストエリア）は親要素いっぱいに広げる */
+.form-item-content>.form-item-input,
+.form-item-content>.form-item-select,
+.form-item-content>.form-item-textarea {
+    width: 100%;
+}
+
+/* グループ内の各入力欄は均等に割り当て */
+.form-item-content-name .form-item-input,
+.form-item-content-tel .form-item-input {
+    flex: 1;
+    width: auto;
+}
+
+/* 入力欄とセレクトボックスの基本設定 */
+.form-item-input,
+.form-item-select {
+    height: 38px;
+    background-color: #F4F4F4;
+    border: none;
+    appearance: none;
+}
+
+/* プレースホルダー等のフォント設定 */
+.form-item-input::placeholder,
+.default-option,
+.form-item-textarea::placeholder {
+    font-family: 'Inika';
+    font-size: 14px;
+    color: #BEB1A6;
+    padding-left: 20px;
+}
+
+/* ラジオボタンの設定 */
+.form-item-input-radio {
+    appearance: none;
+    cursor: pointer;
+    border-color: #82756A;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #82756A;
+    border-radius: 50%;
+}
+
+.form-item-input-radio:checked {
+    background-color: #82756A;
+}
+
+/* テキストエリアの設定（横幅は100%に変更） */
+.form-item-textarea {
+    width: 100%;
+    height: 129px;
+    background-color: #F4F4F4;
+    border: none;
+    appearance: none;
+}
+
+/* 送信ボタン周りの設定 */
+.form-item-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.form-btn {
+    background: #82756A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 40px;
+    width: 160px;
+    height: 46px;
+}
+
+.error {
+    color: red;
+}
