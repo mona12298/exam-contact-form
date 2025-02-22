@@ -21,10 +21,7 @@ php artisan key:generate</p>
 <p>Docker: Docker, docker-compose</p>
 
 <h2>ER図</h2>
-
-
-
-< - - - 作成したER図の画像 - - - >
+<img src="./er/exam-contact-form.drawio.png" alt="ER図">
 
 <h2>URL</h2>
 <p>開発環境：http://localhost/</p>
